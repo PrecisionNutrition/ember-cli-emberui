@@ -12,7 +12,9 @@ module.exports = {
     app.import(app.bowerDirectory + '/velocity/velocity.js');
     app.import(app.bowerDirectory + '/velocity/velocity.ui.js');
 
-    app.import(app.bowerDirectory + '/twix/bin/twix.js');
+    // NOTE: for some strange reason twix isn't loading properly due
+    // to some environment problem on our uat machine
+    // app.import(app.bowerDirectory + '/twix/bin/twix.js');
     app.import(app.bowerDirectory + '/moment/moment.js');
     app.import(app.bowerDirectory + '/ember-list-view/index.js');
 
